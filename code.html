@@ -1,0 +1,350 @@
+<html><head><meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#1754cf",
+          "background-light": "#f6f6f8",
+          "background-dark": "#111621",
+        },
+        fontFamily: {
+          "display": ["Inter", "sans-serif"],
+          "sans": ["Inter", "sans-serif"]
+        },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+</head><body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/60 dark:border-slate-800/60 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">architecture</span>
+</div>
+<span class="text-2xl font-black tracking-tight text-slate-900 dark:text-white">MGCT</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#servicios">Servicios</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#proyectos">Proyectos</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contacto">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2.5 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-all shadow-sm">
+          Iniciar sesión
+        </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative z-10 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+            Consultoría de Próxima Generación
+          </div>
+<h1 class="text-5xl md:text-7xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight">
+            Excelencia en <span class="text-primary">Ingeniería</span> &amp; Consultoría Tecnológica
+          </h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+            Potenciando el futuro empresarial mediante IA, automatización inteligente y desarrollo de software a medida para industrias globales.
+          </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/25 hover:translate-y-[-2px] transition-all">
+              Solicitar asesoría
+            </button>
+<button class="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+              Ver servicios
+            </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Close up of high-tech circuit board with glowing blue light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDG57ucap9U2USUG7UvLkTMzak2JiZkC_iUbd4RACq6Wr1AkYhd4efuBtb7xgHyvNsf7aUuy390bMjc80OfxIDzy4KlULqIcS4TfB9OX6_atp_gPqmWxfggkxxW4aaNOZwRwtKTZSMmFs_SsWNSOmeoGqDTw94fAqHvxmR1ehdzuTnPf-HA_74I_Z5yoQVdyvQYZTi9fR1i0c6RsdbdGyOC3AngaiGXqy-xU8LvyG5WwKmawrsJahAPT36TbXPiTwzvtrNAazA03j"/>
+</div>
+<!-- Floating Stats -->
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-800 max-w-[200px]">
+<p class="text-4xl font-black text-primary">150+</p>
+<p class="text-sm font-semibold text-slate-500 mt-1">Proyectos Exitosos</p>
+</div>
+</div>
+</div>
+<!-- Background pattern -->
+<div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+</section>
+<!-- About Us / Identity -->
+<section class="py-24 bg-white dark:bg-slate-900/50" id="nosotros">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em]">Nuestra Identidad</h2>
+<p class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">
+            Comprometidos con la innovación y la eficiencia técnica
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 rounded-3xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:shadow-xl transition-shadow group">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">track_changes</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Misión</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Impulsar la eficiencia mediante soluciones técnicas de vanguardia, transformando retos complejos en ventajas competitivas para nuestros socios.</p>
+</div>
+<div class="p-10 rounded-3xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:shadow-xl transition-shadow group">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">visibility</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Visión</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Ser el referente regional indiscutible en transformación digital e ingeniería integral, liderando la adopción de nuevas tecnologías.</p>
+</div>
+<div class="p-10 rounded-3xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:shadow-xl transition-shadow group">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Valores</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Integridad, innovación constante y compromiso inquebrantable con la excelencia técnica en cada línea de código y cada diseño.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="servicios">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl space-y-4">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em]">Servicios Especializados</h2>
+<p class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">Soluciones 360° para la era digital</p>
+</div>
+<p class="text-slate-600 dark:text-slate-400 max-w-xs">Ofrecemos un portafolio integral que abarca desde la infraestructura física hasta la inteligencia artificial más avanzada.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Service Card 1 -->
+<div class="group p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">engineering</span>
+<h4 class="text-xl font-bold mb-3">Consultoría en Ingeniería</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Diseño y supervisión de proyectos de ingeniería civil, eléctrica y mecánica con estándares internacionales.</p>
+</div>
+<!-- Service Card 2 -->
+<div class="group p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">code</span>
+<h4 class="text-xl font-bold mb-3">Desarrollo de Software</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Sistemas a medida, aplicaciones móviles y plataformas empresariales escalables y seguras.</p>
+</div>
+<!-- Service Card 3 -->
+<div class="group p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">psychology</span>
+<h4 class="text-xl font-bold mb-3">Inteligencia Artificial</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Implementación de LLMs, Computer Vision y modelos predictivos para optimizar procesos.</p>
+</div>
+<!-- Service Card 4 -->
+<div class="group p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">precision_manufacturing</span>
+<h4 class="text-xl font-bold mb-3">Automatización &amp; IoT</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Integración de hardware y software para el monitoreo y control industrial en tiempo real.</p>
+</div>
+<!-- Service Card 5 -->
+<div class="group p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">analytics</span>
+<h4 class="text-xl font-bold mb-3">Data Analysis &amp; BI</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Transformamos datos crudos en dashboards accionables para la toma de decisiones estratégicas.</p>
+</div>
+<!-- Service Card 6 -->
+<div class="group p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">rocket_launch</span>
+<h4 class="text-xl font-bold mb-3">Transformación Digital</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Acompañamos a las organizaciones en su transición hacia modelos de negocio digitales.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="py-24 bg-white dark:bg-slate-950" id="proyectos">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em]">Casos de Éxito</h2>
+<p class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white">Proyectos que definen el futuro</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-6 bg-slate-100 dark:bg-slate-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic industrial robotic arm working in factory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp7TpPcvqKEX1IV6GQajf5cHa_5aNPCnXZ9pJIUoa6MYalKZay5RTAr0PNUtnXSvpV1C9clapcmjyXGtPTKwAjJNCPwXBG5-EsKog3sNChh3l8VLs5MBPaUCGteVlpYY6Zdp9WwgZdPJtgsUoLtsa_HnqiSviRcBHd90JlN76isx__hvwMgN7gIU3U2MdsbnP-VQilptEVszJ7FTYv-mLoYZexU_pl-yQ9JJvXW7-NgB3YtK5nscY9NBNJczyItZeX9IsVnI_wyBKx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-8">
+<span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-md">Automatización Industrial</span>
+</div>
+</div>
+<h5 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Smart Factory v2.0</h5>
+<p class="text-slate-600 dark:text-slate-400">Implementación de sensores IoT y algoritmos de mantenimiento predictivo para una planta automotriz líder.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-6 bg-slate-100 dark:bg-slate-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Financial data analytics dashboard on multiple screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCrjctEDgjhVK5pyuzV8vpHR1JVW12ydpKQTxpc0DSFgDvzh3o4NNE6ZZK-eV7q46EH0I1nCYcq-9U33EgOz4ndxaEwrki4Slbsh0023FWHHj0NpBQUxcDtE6CDNIKTPs0bXOw8q6qMQ_cZLaw3LHrn2obOR5TLMi2IA6QQM_DKwXnx1-Upy5wTu6v4ZHR3fNyVNFD1MP4bIlzADjksNWGk03jBRHMV9AoqY7CCHvQa08VrqRVW2UTBq9zV6-0AGOVK6YIIkUJff2y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-8">
+<span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-md">Big Data &amp; Cloud</span>
+</div>
+</div>
+<h5 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Sistema de Inteligencia Financiera</h5>
+<p class="text-slate-600 dark:text-slate-400">Plataforma escalable para el análisis en tiempo real de mercados globales y gestión de riesgos bancarios.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics Section -->
+<section class="py-16 bg-primary">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+<div class="space-y-2">
+<p class="text-4xl md:text-5xl font-black">200+</p>
+<p class="text-sm font-medium opacity-80 uppercase tracking-widest">Proyectos</p>
+</div>
+<div class="space-y-2">
+<p class="text-4xl md:text-5xl font-black">12+</p>
+<p class="text-sm font-medium opacity-80 uppercase tracking-widest">Disciplinas</p>
+</div>
+<div class="space-y-2">
+<p class="text-4xl md:text-5xl font-black">98%</p>
+<p class="text-sm font-medium opacity-80 uppercase tracking-widest">Satisfacción</p>
+</div>
+<div class="space-y-2">
+<p class="text-4xl md:text-5xl font-black">15+</p>
+<p class="text-sm font-medium opacity-80 uppercase tracking-widest">Países</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="contacto">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div class="space-y-8">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em]">Contacto</h2>
+<p class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">Iniciemos una nueva era de colaboración</p>
+<p class="text-lg text-slate-600 dark:text-slate-400">¿Listo para transformar su empresa? Nuestro equipo de expertos está a su disposición.</p>
+<div class="space-y-6 pt-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary shadow-sm border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Email</p>
+<p class="text-lg font-semibold">contacto@mgct.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary shadow-sm border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Teléfono</p>
+<p class="text-lg font-semibold">+34 900 123 456</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary shadow-sm border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Oficina Central</p>
+<p class="text-lg font-semibold">Distrito Tecnológico, Madrid</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 md:p-12 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold">Nombre Completo</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Ej. Juan Pérez" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold">Empresa</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Ej. TechCorp S.A." type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold">Correo Electrónico</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="email@empresa.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold">Mensaje</label>
+<textarea class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="¿En qué podemos ayudarle?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all">
+                Enviar Mensaje
+              </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-slate-950 text-slate-300 py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">architecture</span>
+</div>
+<span class="text-2xl font-black tracking-tight text-white">MGCT</span>
+</div>
+<p class="text-sm leading-relaxed opacity-70">
+            Mejora General Consultoría Total es líder en la integración de ingeniería tradicional con las tecnologías más disruptivas del siglo XXI.
+          </p>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6">Enlaces Rápidos</h6>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Sobre Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Portafolio de Servicios</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Casos de Éxito</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carreras</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6">Servicios</h6>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">IA &amp; Machine Learning</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ciberseguridad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ingeniería Civil</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Desarrollo Web &amp; App</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6">Social</h6>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50 uppercase tracking-widest">
+<p>© 2024 MGCT Mejora General Consultoría Total. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-white" href="#">Privacidad</a>
+<a class="hover:text-white" href="#">Términos</a>
+<a class="hover:text-white" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
